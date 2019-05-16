@@ -8,8 +8,7 @@
       
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="float-grid.css">
-      
-    <title>MSolcast</title>
+    
    
     <link href="https://fonts.googleapis.com/css?family=Bitter|Raleway:500,600" rel="stylesheet">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -21,35 +20,31 @@
     
     <body id= 'body-main'>
 
-        <header role="banner"><h1>M<span style='color:#f9df1b'>S</span>olcast</h1>
-                <nav role="navigation" class="navbar">    
-                        <ul class="navbar-list" id= "col-6">
-                           <!-- <li class="navbar-item"><a class="navbar-item navbar-link" href="https://www.nationalmssociety.org/Donate">NationalMSSociety.org</a></li> -->
-                        </ul>  
-                    </nav>
-                       
-                <button class="button-primary" type="submit" id="forecast-button" aria-label="submit for local forecast">Vitamin D Forecast</button>
-                <button class="button-primary" type="submit" id="recommendations" aria-label="">Find Outside Space</button>
-                <button class="button-primary" type="submit" id="resources-button" aria-label="submit for resources list">Links & Resources</button>
-                
-                </header>
-          
-                
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1>M<span style='color:#f9df1b'>S</span>uncast</h1>
+              <p>A forecast app made for people with MS and Vitamin D deficiency in mind</p>
+              <button class="button-primary" type="submit" id="forecast-button" aria-label="submit for local forecast">Vitamin D Forecast</button>
+              <button class="button-primary" type="submit" id="recommendations" aria-label="">Find Outside Space</button>
+              <button class="button-primary" type="submit" id="resources-button" aria-label="submit for resources list">Links & Resources</button>
+            </div>
+          </div>       
+         
       
         </div>
 
 
          <h1><div id="forecast" class="col-12">
        
-        <div id="temp" class="col-6"></div> 
-        <div id="minutely" class="col-6"></div>
-        <div id="location" class="col-6"></div>
+        <div id="temp" class="col-4"></div> 
+        <div id="minutely" class="col-4"></div>
+        <div id="location" class="col-4"></div>
          </div></h1>
 
     <div id="feedback">
         <h1> <div id="tempFeedback" class= "col-12"></div>
             <br>
-        <div id="latitudeFeedback" class= "col-12"></div> </h1>
+        <div id="latitudeFeedback" class= "col-4"></div> </h1>
         </div>
 
 

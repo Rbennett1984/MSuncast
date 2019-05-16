@@ -45,7 +45,7 @@ function weather() {
   }
 
     else if (data.currently.temperature > 80) { 
-    tempFeedback.innerHTML = ("The weather is a bit too hot and you may experience negative <br> symptoms if you are spending more than a few minutes outside")
+    tempFeedback.innerHTML = ("The weather is a bit too hot and you may experience negative <br> symptoms if you are spending more than a few minutes outside.")
   }
 
     else {
