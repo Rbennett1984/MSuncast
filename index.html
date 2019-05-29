@@ -18,20 +18,22 @@
        
     </head> 
     
-    <body id= 'body-main'>
-
-        <div class="hero-image">
+    <body>
+            <div class="hero-image">
             <div class="hero-text">
-                <h1>M<span style='color:#f9df1b'>S</span>uncast</h1>
+                <h1>M<span style='color:#FFD07B'>S</span>uncast</h1>
               <p>A forecast app made for people with MS and Vitamin D deficiency in mind</p>
-              <button class="button-primary" type="submit" id="forecast-button" aria-label="submit for local forecast">Vitamin D Forecast</button>
-              <button class="button-primary" type="submit" id="recommendations" aria-label="">Find Outside Space</button>
-              <button class="button-primary" type="submit" id="resources-button" aria-label="submit for resources list">Links & Resources</button>
+              
             </div>
-          </div>       
+        </div>       
          
       
         </div>
+    <nav id="navbar-list" class="col-12">
+            <button class="button-primary" type="submit" id="forecast-button" aria-label="submit for local forecast">Vitamin D Forecast</button>
+            <button class="button-primary" type="submit" id="recommendations" aria-label="">Find Outside Space</button>
+            <button class="button-primary" type="submit" id="resources-button" aria-label="submit for resources list">Links & Resources</button>    
+    </nav>
 
 
          <h1><div id="forecast" class="col-12">
@@ -42,15 +44,23 @@
          </div></h1>
 
     <div id="feedback">
-        <h1> <div id="tempFeedback" class= "col-12"></div>
-            <br>
-        <div id="latitudeFeedback" class= "col-4"></div> </h1>
+        <h1> <div id="tempFeedback" class= "col-12"></div> </h1>
+
         </div>
+
+    <div id="feedback">
+
+    <h1> <div id="latitudeFeedback" class= "col-12"></div> </h1>
+        </div>
+
+        <div id="map"></div>
+   
+     
 
 
       
 
-<div id= 'resources' class= "col-12">
+<div id= "resources" class= "col-12">
       
     <h2>Resources</h2>
     <p> If you're interested in learning more about current research in Multiple Sclerosis and the Vitamin D connection, please see the resources below.</p>
@@ -65,7 +75,7 @@
         </ul>
 </div>
 
-<script
+<script>
 src="https://code.jquery.com/jquery-3.3.1.js"
 integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 crossorigin="anonymous"></script>

@@ -23,15 +23,15 @@ function weather() {
       $('#minutely').html('Your current forecast: ' + data.minutely.summary);
 
     if (position.coords.latitude > 37) {
-        latitudeFeedback.innerHTML = ("In the winter, it's virtually impossible to produce vitamin D \
-        from the sun if you live 37 degrees above the equator (or north of Atlanta), because the sun \
+        latitudeFeedback.innerHTML = ("You're latitude indicates that you are above the 37th parallel \ In the winter, it's virtually impossible to produce vitamin D \
+        from the sun if you live 37 degrees above the equator --north of Atlanta. In these areas, the sun \
         never gets high enough in the sky for its ultraviolet B rays to penetrate the atmosphere, \
         according to Harvard Womens' Health Watch. But summer is a great time to stock up on the nutrient. \
         When the sun's UV-B rays hit the skin, a reaction takes place that enables skin cells to manufacture \
         vitamin D.")
     }
-      else if (position.coords.latitude < 37) + { 
-        latitudeFeedback:innerHTML = ("You are also close enough to the equator that you can get your regular dose of Vitamin D with regular sun exposure. Take advantage of the sun around midday.")
+      else if (position.coords.latitude < 37)  { 
+        latitudeFeedback.innerHTML = ("You're latitude indicates that you are also close enough to the equator that you can get your regular dose of Vitamin D with regular sun exposure. Take advantage of the sun around midday.")
       }
       else {
         latitudeFeedback.innerHTML = ("Are you still on Earth?")
@@ -53,7 +53,7 @@ function weather() {
 
   };
   
-  
+
 
   
     });
@@ -84,6 +84,50 @@ function weather() {
 
 
 
+      /*var map, infoWindow;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 6
+        });
+        infoWindow = new google.maps.InfoWindow;
+
+
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Location found.');
+            infoWindow.open(map);
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
+
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+        infoWindow.open(map);
+      }
+
+  async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+
+
+
+
+
 //Solar forecast for zenith using solcast API 
 
 //const solcast_URL = https: api.solcast.com.au/radiation/forecasts?longitude=30&latitude=-82&api_key=F4qebA-81wVfGJiJYfm_XLKHzSDgG99J&format=json';
@@ -110,7 +154,7 @@ function weather() {
   //});
 //});
 
-//}
+//} */
 
 
 weather();

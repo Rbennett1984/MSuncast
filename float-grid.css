@@ -37,7 +37,7 @@
   }
   
   .col-3, .col-4, .col-6, .col-12 {
-    float: left;
+    display: inline-block;
   
     /* Gutters:
      * Each column is padded by half-a-gutter on each side,
